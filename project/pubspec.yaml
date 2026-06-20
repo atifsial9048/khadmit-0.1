@@ -1,0 +1,51 @@
+name: khadmat_pakistan
+description: Khadmat Pakistan - Har Shehar, Har Ghar
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.2
+
+  # Firebase
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.0
+
+  # Maps (OpenStreetMap - no API key needed)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Location
+  geolocator: ^13.0.0
+
+  # UI & Fonts
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  image_picker: ^1.1.2
+  flutter_rating_bar: ^4.0.1
+
+  # Utils
+  intl: ^0.19.0
+  shared_preferences: ^2.3.1
+  url_launcher: ^6.3.0
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
