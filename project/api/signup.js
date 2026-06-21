@@ -21,6 +21,7 @@ export default async function handler(req, res) {
     const { data: userData, error: userError } = await supabaseAdmin.auth.admin.createUser({
       email,
       password,
+      email_confirm: true,
       user_metadata: { full_name: name, phone: normalizedPhone }
     })
 
