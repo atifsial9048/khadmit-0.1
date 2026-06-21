@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, phone, city, password } = await req.json()
+    const { name, phone, city, password } = req.body
 
     if (!name || !phone || !city || !password || password.length < 6) {
       return res.status(400).json({ error: 'Invalid signup data' })

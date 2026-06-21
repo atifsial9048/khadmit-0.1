@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { phone, password } = await req.json()
+    const { phone, password } = req.body
 
     if (!phone || !password) {
       return res.status(400).json({ error: 'Invalid sign-in data' })
