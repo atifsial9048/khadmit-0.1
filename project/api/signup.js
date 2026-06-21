@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: userError.message || 'Unable to create user' })
     }
 
-    const userId = userData?.id
+    const userId = userData?.user?.id
     if (!userId) {
       return res.status(500).json({ error: 'Missing Supabase user id' })
     }
